@@ -3,7 +3,6 @@
 
 #include <iostream>
 #include <math.h>
-
 #include "canon_ofensivo.h"
 
 using namespace std;
@@ -26,7 +25,10 @@ class canon_defensivo
 
 public:
     canon_defensivo();
-    canon_defensivo(float );
+    canon_defensivo(float d,float Ho,float Xo,float Yo, float d0,float a, float Vxo, float Vyo, float V0o);
+    ~canon_defensivo();
+
+    void ingresar_datos();
 
     float getPosicion_inicial_x_canon_defensivo() const;
     void setPosicion_inicial_x_canon_defensivo(float value);
